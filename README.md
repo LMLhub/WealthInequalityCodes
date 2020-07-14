@@ -1,0 +1,1 @@
+This repository includes MATLAB codes for reproducing the figures in the paper: "Wealth Inequality and the Ergodic Hypothesis: Evidence from the United States" by Yonatan Berman, Alexander Adamou and Ole Peters.

@@ -1,7 +1,11 @@
 This repository includes MATLAB codes for reproducing the figures in the paper: "Wealth Inequality and the Ergodic Hypothesis: Evidence from the United States" by Yonatan Berman, Alexander Adamou and Ole Peters:
 
+
+
 Figure 1: plot_trajectories.m
+
 Figure 2: plot_tau_top1.m
+
 Figure 3: plot_convergence_time_tau.m
 Figure 4: plot_tau_with_earnings.m
 Figure 5: plot_earnings_to_wealth.m

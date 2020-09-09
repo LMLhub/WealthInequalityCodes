@@ -40,6 +40,7 @@ yyy1=(xx-err')';
 yyy2=(xx+err')';
 hh0=fill([xxx1 fliplr(xxx1)],[yyy1 fliplr(yyy2)],red1);
 set(hh0,'facealpha',.25)
+set(hh0,'edgecolor',red1)
 hold on;
 plot([0 1e5],[0 0],'color',grey3,'linestyle','--','linewidth',2);
 
@@ -52,7 +53,9 @@ yyy2=(xx+err')';
 hh0=fill([xxx1 fliplr(xxx1)],[yyy1 fliplr(yyy2)],'m');
 set(hh0,'facealpha',.25)
 set(hh0,'facecolor',cc2)
-h32=plot(1918:2012,xx,':','color',cc2,'linewidth',2);
+set(hh0,'linestyle',':')
+set(hh0,'edgecolor',cc2)
+h32=plot(1918:2012,xx,':','color',cc2,'linewidth',3);
 
 [xx err]=moving_average(median(tautau_sigma')',LOWE);
 xxx1=1918:2012;
@@ -61,7 +64,9 @@ yyy2=(xx+err')';
 hh0=fill([xxx1 fliplr(xxx1)],[yyy1 fliplr(yyy2)],'b');
 set(hh0,'facealpha',.25)
 set(hh0,'facecolor',cc3)
-h33=plot(1918:2012,xx,'color',cc3,'linewidth',1);
+set(hh0,'linestyle','-.')
+set(hh0,'edgecolor',cc3)
+h33=plot(1918:2012,xx,'-.','color',cc3,'linewidth',3);
 hhh1=legend([h31,h32,h33],'$\widetilde{\tau}_{1\%} \left(t\right)$','$\widetilde{\tau}_{all\%} \left(t\right)$','$\widetilde{\tau}_{all\%+\sigma} \left(t\right)$','location','northeast');
 set(hhh1,'interpreter','latex')
 xlim([1914 2013]);

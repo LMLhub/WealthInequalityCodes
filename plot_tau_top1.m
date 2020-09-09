@@ -60,7 +60,7 @@ set(hhh1,'interpreter','latex')
 legend boxoff
 
 subplot(2,1,2)
-plot(1913:2014,zucmanUS(:,2),'-','color',blue5,'linewidth',3);
+plot(1913:2014,zucmanUS(:,2),'-.','color',blue5,'linewidth',3);
 hold on;
 plot(1913:2014,zucmanUS(:,2),'k:','linewidth',1);
 plot(1913:2014,top_1_reprod_smooth,'color',red1,'linewidth',3);

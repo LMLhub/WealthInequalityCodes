@@ -31,7 +31,7 @@ green3=[0.47 0.67 0.19];
 
 
 subplot(2,1,1);
-h=plot(1913:2014,zucmanUS(:,2),'-',1916:2000,estate(:,1),'--',1989:2013,preferred(:,1),':','linewidth',3);
+h=plot(1913:2014,zucmanUS(:,2),'-',1916:2000,estate(:,1),'-.',1989:2013,preferred(:,1),':','linewidth',3);
 set(h(1),'Color',blue1);
 set(h(2),'Color',black);
 set(h(3),'Color',grey4);
@@ -47,7 +47,7 @@ grid off;
 box off;
 
 subplot(2,1,2);
-h=plot(1917:2012,data(:,5),'-',1916:2000,estate(:,4),'--',1989:2013,preferred(:,2),':','linewidth',3);
+h=plot(1917:2012,data(:,5),'-',1916:2000,estate(:,4),'-.',1989:2013,preferred(:,2),':','linewidth',3);
 set(h(1),'Color',blue1);
 set(h(2),'Color',black);
 set(h(3),'Color',grey4);

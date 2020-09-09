@@ -43,7 +43,7 @@ plot([0 1e5],[0 0],'color',grey3,'linestyle','--','linewidth',2);
 %plot(1929:2009,-(moving_average(diff(earnings)./earnings(1:end-1)-(diff(xave)./xave(1:end-1))',LOWE*2)),'color',grey1,'linestyle',':','linewidth',2);
 h1=plot(1929:2009,tautau3',':k','linewidth',1);
 h3=plot(1929:2009,xx3,'color',red1,'linewidth',3);
-h4=plot(1929:2009,xx1,'--','color',blue4,'linewidth',3);
+h4=plot(1929:2009,xx1,'-.','color',blue4,'linewidth',3);
 h5=plot(1929:2009,xx2,':','color',yellow2,'linewidth',3);
 hold off;
 % grid
@@ -70,7 +70,7 @@ hold on;
 plot([0 1e5],[0 0],'color',grey3,'linestyle','--','linewidth',2);
 %h1=plot(1929:2009,tautau3','k','linewidth',2);
 h3=plot(1929:2009,xx3,'color',red1,'linewidth',3);
-h4=plot(1929:2009,xx1,'--','color',blue4,'linewidth',3);
+h4=plot(1929:2009,xx1,'-.','color',blue4,'linewidth',3);
 h5=plot(1929:2009,xx2,':','color',yellow2,'linewidth',3);
 hold off;
 % grid
@@ -96,7 +96,7 @@ hold on;
 plot([0 1e5],[0 0],'color',grey3,'linestyle','--','linewidth',2);
 h1=plot(1929:2009,tautau6',':k','linewidth',1);
 h3=plot(1929:2009,xx6,'color',red1,'linewidth',3);
-h4=plot(1929:2009,xx4,'--','color',blue4,'linewidth',3);
+h4=plot(1929:2009,xx4,'-.','color',blue4,'linewidth',3);
 h5=plot(1929:2009,xx5,':','color',yellow2,'linewidth',3);
 hold off;
 % grid
@@ -123,7 +123,7 @@ hold on;
 plot([0 1e5],[0 0],'color',grey3,'linestyle','--','linewidth',2);
 %h1=plot(1929:2009,tautau6','k','linewidth',2);
 h3=plot(1929:2009,xx6,'color',red1,'linewidth',3);
-h4=plot(1929:2009,xx4,'--','color',blue4,'linewidth',3);
+h4=plot(1929:2009,xx4,'-.','color',blue4,'linewidth',3);
 h5=plot(1929:2009,xx5,':','color',yellow2,'linewidth',3);
 hold off;
 % grid

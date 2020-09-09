@@ -37,9 +37,9 @@ subplot(2,1,1)
 [xx3 err3]=moving_average(tautau1p,LOWE);
 plot([0 1e5],[0 0],'color',grey3,'linestyle','--','linewidth',2);
 hold on;
-h1=plot(1914:2014,xx1,'Color',blue1,'linewidth',3);
-h2=plot(1917:2000,xx2,'Color',black,'linewidth',3);
-h3=plot(1990:2013,xx3,'Color',grey4,'linewidth',3);
+h1=plot(1914:2014,xx1,'-','Color',blue1,'linewidth',3);
+h2=plot(1917:2000,xx2,'--','Color',black,'linewidth',3);
+h3=plot(1990:2013,xx3,':','Color',grey4,'linewidth',3);
 grid
 grid off;
 box off
@@ -58,9 +58,9 @@ subplot(2,1,2)
 [xx3 err3]=moving_average(tautau0i1p,LOWE);
 plot([0 1e5],[0 0],'color',grey3,'linestyle','--','linewidth',2);
 hold on;
-h1=plot(1918:2012,xx1,'Color',blue1,'linewidth',3);
-h2=plot(1917:2000,xx2,'Color',black,'linewidth',3);
-h3=plot(1990:2013,xx3,'Color',grey4,'linewidth',3);
+h1=plot(1918:2012,xx1,'-','Color',blue1,'linewidth',3);
+h2=plot(1917:2000,xx2,'--','Color',black,'linewidth',3);
+h3=plot(1990:2013,xx3,':','Color',grey4,'linewidth',3);
 grid
 grid off;
 box off

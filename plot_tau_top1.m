@@ -41,7 +41,7 @@ set(hh0,'facealpha',.25)
 hold on;
 plot([0 1e5],[0 0],'color',grey3,'linestyle','--','linewidth',2);
 
-h1=plot(1914:2014,tautau1z,'k','linewidth',2);
+h1=plot(1914:2014,tautau1z,':k','linewidth',1);
 h3=plot(1914:2014,xx,'color',red1,'linewidth',3);
 
 hold off;
@@ -60,9 +60,9 @@ set(hhh1,'interpreter','latex')
 legend boxoff
 
 subplot(2,1,2)
-plot(1913:2014,zucmanUS(:,2),'color',blue1,'linewidth',3);
+plot(1913:2014,zucmanUS(:,2),'-','color',blue5,'linewidth',3);
 hold on;
-plot(1913:2014,zucmanUS(:,2),'k--','linewidth',3);
+plot(1913:2014,zucmanUS(:,2),'k:','linewidth',1);
 plot(1913:2014,top_1_reprod_smooth,'color',red1,'linewidth',3);
 grid off;
 box off

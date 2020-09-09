@@ -32,16 +32,16 @@ green3=[0.47 0.67 0.19];
 positionVector1 = [0.1, 0.45, 0.85, 0.5];
 subplot('Position',positionVector1)
 
-h1=plot(t,reshape(shs1(:,1,1),length(t),1),'color',blue3,'linewidth',2);
+h1=plot(t,reshape(shs1(:,1,1),length(t),1),'color',black,'linewidth',3);
 hold on;
-h2=plot(t,reshape(shs1(:,1,6),length(t),1),'--','color',blue3,'linewidth',2);
-h3=plot(t,reshape(shs1(:,1,11),length(t),1),':','color',blue3,'linewidth',2);
-h4=plot(t,reshape(shs1(:,2,1),length(t),1),'color',yellow3,'linewidth',2);
-h5=plot(t,reshape(shs1(:,2,6),length(t),1),'--','color',yellow3,'linewidth',2);
-h6=plot(t,reshape(shs1(:,2,11),length(t),1),':','color',yellow3,'linewidth',2);
-h7=plot(t,reshape(shs1(:,3,1),length(t),1),'color',purple2,'linewidth',2);
-h8=plot(t,reshape(shs1(:,3,6),length(t),1),'--','color',purple2,'linewidth',2);
-h9=plot(t,reshape(shs1(:,3,11),length(t),1),':','color',purple2,'linewidth',2);
+h2=plot(t,reshape(shs1(:,1,6),length(t),1),'--','color',black,'linewidth',3);
+h3=plot(t,reshape(shs1(:,1,11),length(t),1),':','color',black,'linewidth',3);
+h4=plot(t,reshape(shs1(:,2,1),length(t),1),'color',grey3,'linewidth',3);
+h5=plot(t,reshape(shs1(:,2,6),length(t),1),'--','color',grey3,'linewidth',3);
+h6=plot(t,reshape(shs1(:,2,11),length(t),1),':','color',grey3,'linewidth',3);
+h7=plot(t,reshape(shs1(:,3,1),length(t),1),'color',black,'linewidth',1);
+h8=plot(t,reshape(shs1(:,3,6),length(t),1),'--','color',black,'linewidth',1);
+h9=plot(t,reshape(shs1(:,3,11),length(t),1),':','color',black,'linewidth',1);
 
 grid
 grid off;
@@ -55,17 +55,17 @@ xlabel('Time (year)');
 ylabel('Wealth share (%)');
 ll2=legend([h1 h2 h3 h4 h5 h6 h7 h8 h9],'$S_{10\%} \left(t\right)$, $\tau=3\%$ year$^{-1}$','$S_{10\%} \left(t\right)$, $\tau=2.5\%$ year$^{-1}$','$S_{10\%} \left(t\right)$, $\tau=2\%$ year$^{-1}$',...
     '$S_{1\%} \left(t\right)$, $\tau=3\%$ year$^{-1}$','$S_{1\%} \left(t\right)$, $\tau=2.5\%$ year$^{-1}$','$S_{1\%} \left(t\right)$, $\tau=2\%$ year$^{-1}$',...
-    '$S_{0.1\%} \left(t\right)$, $\tau=3\%$ year$^{-1}$','$S_{0.1\%} \left(t\right)$, $\tau=2.5\%$ year$^{-1}$','$S_{0.1\%} \left(t\right)$, $\tau=2\%$ year$^{-1}$');
+    '$S_{0.1\%} \left(t\right)$, $\tau=3\%$ year$^{-1}$','$S_{0.1\%} \left(t\right)$, $\tau=2.5\%$ year$^{-1}$','$S_{0.1\%} \left(t\right)$, $\tau=2\%$ year$^{-1}$','location','east');
 set(ll2,'interpreter','latex');
 
 %subplot(2,1,2);
 positionVector2 = [0.1, 0.1, 0.85, 0.25];
 subplot('Position',positionVector2)
 
-h1=plot(taus,TT(:,1),'color',blue3,'linewidth',3);
+h1=plot(taus,TT(:,1),'color',black,'linewidth',3);
 hold on;
-h2=plot(taus,TT(:,2),'color',yellow3,'linewidth',3);
-h3=plot(taus,TT(:,3),'color',purple2,'linewidth',3);
+h2=plot(taus,TT(:,2),'--','color',grey3,'linewidth',3);
+h3=plot(taus,TT(:,3),':','color',black,'linewidth',1);
 
 grid
 grid off;

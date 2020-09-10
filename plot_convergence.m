@@ -36,9 +36,9 @@ h1=plot(t,reshape(shs1(:,1,1),length(t),1),'color',black,'linewidth',3);
 hold on;
 h2=plot(t,reshape(shs1(:,1,6),length(t),1),'--','color',black,'linewidth',3);
 h3=plot(t,reshape(shs1(:,1,11),length(t),1),':','color',black,'linewidth',3);
-h4=plot(t,reshape(shs1(:,2,1),length(t),1),'color',grey3,'linewidth',3);
-h5=plot(t,reshape(shs1(:,2,6),length(t),1),'--','color',grey3,'linewidth',3);
-h6=plot(t,reshape(shs1(:,2,11),length(t),1),':','color',grey3,'linewidth',3);
+h4=plot(t,reshape(shs1(:,2,1),length(t),1),'color',grey3,'linewidth',2);
+h5=plot(t,reshape(shs1(:,2,6),length(t),1),'--','color',grey3,'linewidth',2);
+h6=plot(t,reshape(shs1(:,2,11),length(t),1),':','color',grey3,'linewidth',2);
 h7=plot(t,reshape(shs1(:,3,1),length(t),1),'color',black,'linewidth',1);
 h8=plot(t,reshape(shs1(:,3,6),length(t),1),'--','color',black,'linewidth',1);
 h9=plot(t,reshape(shs1(:,3,11),length(t),1),':','color',black,'linewidth',1);
@@ -64,7 +64,7 @@ subplot('Position',positionVector2)
 
 h1=plot(taus,TT(:,1),'color',black,'linewidth',3);
 hold on;
-h2=plot(taus,TT(:,2),'--','color',grey3,'linewidth',3);
+h2=plot(taus,TT(:,2),'--','color',grey3,'linewidth',2);
 h3=plot(taus,TT(:,3),':','color',black,'linewidth',1);
 
 grid

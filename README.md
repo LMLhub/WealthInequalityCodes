@@ -14,7 +14,7 @@ Figure 5: plot_earnings_to_wealth.m
 
 Figure 6: plot_data.m
 
-Figure 7: plot_tau_top1_top0i1_datasetsm.
+Figure 7: plot_tau_top1_top0i1_datasets.m
 
 Figure 8: plot_DOW.m
 
